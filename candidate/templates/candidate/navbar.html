@@ -1,0 +1,29 @@
+
+<style>
+    .sidebar {
+  background-color: #FFA500;
+  color: white;
+  width: 220px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 0;
+}
+</style>
+<nav class="sidebar">
+    <ul>
+      <li><a href="{% url 'candidate_dashboard' %}"><i class="fas fa-user"></i> Profile</a></li>
+      <li><a href="{% url 'myjoblistviews' %}"><i class="fas fa-list"></i> My Jobs</a></li>
+      
+    </ul>
+    <button class="logout-button"><a href="{% url 'logout_user' %}">Logout</a></button>
+  </nav>
